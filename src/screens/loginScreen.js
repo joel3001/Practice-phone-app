@@ -3,7 +3,7 @@ import {StyleSheet, Text, View, StatusBar} from 'react-native';
 import Logo from '../components/logo';
 import Form from '../components/form';
 
-export default class Login extends Component <{}> {
+export default class LoginScreen extends Component <{}> {
     render() {
         return(
         <View style={styles.container}>
