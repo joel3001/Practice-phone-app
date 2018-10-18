@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   container: {
       flex: 1,
       justifyContent: 'flex-end',
-      paddingTop: 30,
+      paddingTop: 100,
     },
   inputBox: {
       width: 300,

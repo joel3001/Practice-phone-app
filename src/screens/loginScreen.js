@@ -1,9 +1,16 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, StatusBar} from 'react-native';
+import {StyleSheet, Text, View, StatusBar, TouchableOpacity} from 'react-native';
 import Logo from '../components/logo';
 import Form from '../components/form';
+import { Actions } from 'react-native-router-flux';
+
 
 export default class LoginScreen extends Component <{}> {
+
+    pressSignUp() {
+        Actions.signup()
+    }
+
     render() {
         return(
         <View style={styles.container}>
@@ -11,7 +18,7 @@ export default class LoginScreen extends Component <{}> {
             <Form type="Login"/>
             <View style={styles.signUp}>
                 <Text style={styles.signUpText}>Don't have an account yet?</Text>
-                <Text style={styles.signUpButton}> Sign up</Text>
+                <TouchableOpacity onPress={this.pressSignUp}><Text style={styles.signUpButton}> Sign up</Text></TouchableOpacity>
             </View>
         </View>
         )

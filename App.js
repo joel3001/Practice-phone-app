@@ -8,29 +8,29 @@
 
 import React, {Component} from 'react';
 import {StyleSheet, View, Text, StatusBar} from 'react-native';
-import { createStackNavigator } from 'react-navigation';
+// import { createStackNavigator } from 'react-navigation';
 import LoginScreen from './src/screens/loginScreen'
 import SignUpScreen from './src/screens/signUpScreen'
+import Routes from './src/components/routes'
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-      <StatusBar
-        backgroundColor="#00838F"
-        barStyle="light-content"
-      />
-      <LoginScreen/>  
-      </View>
+      <Routes/>
     );
   }
 }
 
-const AppStackNavigatior = createStackNavigator({
-  Login: LoginScreen,
-  SignUp: SignUpScreen,
-})
+//const AppStackNavigatior = createStackNavigator(
+  //{
+    //Login: LoginScreen,
+    //SignUp: SignUpScreen,
+  //},
+  //{
+    //initialRouteName: 'Login',
+  //}
+//)
 
 const styles = StyleSheet.create({
   container: {

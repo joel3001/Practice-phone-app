@@ -1,17 +1,24 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, StatusBar} from 'react-native';
+import {StyleSheet, Text, View, StatusBar, TouchableOpacity} from 'react-native';
 import Logo2 from '../components/logo2';
 import Form2 from '../components/form2';
+import { Actions } from 'react-native-router-flux';
+
 
 export default class SignUpScreen extends Component <{}> {
+
+    pressLogin() {
+        Actions.pop()
+    }
+
     render() {
         return(
         <View style={styles.container}>
             <Logo2 />
             <Form2 type="Sign Up"/>
             <View style={styles.signUp}>
-                <Text style={styles.signUpText}>Already have an account yet?</Text>
-                <Text style={styles.signUpButton}> Sign in</Text>
+                <Text style={styles.signUpText}>Already have an account?</Text>
+                <TouchableOpacity onPress={this.pressLogin}><Text style={styles.signUpButton}> Sign in</Text></TouchableOpacity>
             </View>
         </View>
         )

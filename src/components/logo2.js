@@ -6,7 +6,7 @@ export default class Logo2 extends Component<{}> {
     return (
         <View style={styles.container}>
           <Image 
-          style={{width: 100, height: 100}}
+          style={{width: 150, height: 150}}
           source={require('../images/beer-logos-png-2.png')}
           />
         </View>
