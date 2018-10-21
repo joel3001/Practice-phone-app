@@ -26,7 +26,9 @@ constructor(props) {
                 underlineColorAndroid="rgba(0,0,0,0)"
                 placeholder="Email" 
                 secureTextEntry={true}
-                placeholderTextColor="#000000"/>
+                placeholderTextColor="#000000"
+                selectionColor="#000000"
+                keyboardType="email-address"/>
 
             <TextInput style={styles.inputBox} 
                 underlineColorAndroid="rgba(0,0,0,0)"
@@ -56,7 +58,7 @@ const styles = StyleSheet.create({
     },
   inputBox: {
       width: 300,
-      backgroundColor: '#00838F',
+      backgroundColor: '#FFAB40',
       borderRadius: 25,
       paddingHorizontal: 16,
       fontSize: 16,
@@ -73,6 +75,6 @@ const styles = StyleSheet.create({
       fontSize: 16,
       fontWeight: '500',
       color: '#000000',
-      textAlign: 'center'   
+      textAlign: 'center',   
     } 
 });

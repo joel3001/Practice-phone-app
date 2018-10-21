@@ -1,25 +1,17 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, StatusBar, TouchableOpacity} from 'react-native';
 import Logo from '../components/logo';
-import Form from '../components/form';
+import HomePage from '../components/homePage';
 import { Actions } from 'react-native-router-flux';
 
 
-export default class LoginScreen extends Component <{}> {
+export default class HomeScreen extends Component <{}> {
 
-    pressSignUp() {
-        Actions.signup()
-    }
 
     render() {
         return(
         <View style={styles.container}>
-            <Logo />
-            <Form type="Login" />
-            <View style={styles.signUp}>
-                <Text style={styles.signUpText}>Don't have an account yet?</Text>
-                <TouchableOpacity onPress={this.pressSignUp}><Text style={styles.signUpButton}> Sign up</Text></TouchableOpacity>
-            </View>
+            <HomePage typeA="Create New Group" typeB="Existing Groups" typeC="Find My Mates"/>
         </View>
         )
     }
