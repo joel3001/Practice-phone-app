@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, Image, TextInput, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View, Image, TextInput, TouchableOpacity, ImageBackground} from 'react-native';
 import HomeScreen from '../screens/homeScreen';
 import { Actions } from 'react-native-router-flux';
 

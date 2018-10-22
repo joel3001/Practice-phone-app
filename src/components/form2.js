@@ -13,19 +13,16 @@ constructor(props) {
             <TextInput style={styles.inputBox} 
                 underlineColorAndroid="rgba(0,0,0,0)"
                 placeholder="First Name" 
-                secureTextEntry={true}
                 placeholderTextColor="#000000"/>
 
             <TextInput style={styles.inputBox} 
                 underlineColorAndroid="rgba(0,0,0,0)"
                 placeholder="Last Name" 
-                secureTextEntry={true}
                 placeholderTextColor="#000000"/>
 
             <TextInput style={styles.inputBox} 
                 underlineColorAndroid="rgba(0,0,0,0)"
                 placeholder="Email" 
-                secureTextEntry={true}
                 placeholderTextColor="#000000"
                 selectionColor="#000000"
                 keyboardType="email-address"/>
@@ -54,6 +51,7 @@ const styles = StyleSheet.create({
   container: {
       flex: 1,
       justifyContent: 'flex-end',
+      alignItems: 'center',
       paddingTop: 100,
     },
   inputBox: {
