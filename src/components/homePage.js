@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, TouchableOpacity, ImageBackground} from 'react-native';
 import Logo3 from '../components/logo3';
+import { Actions } from 'react-native-router-flux';
 
 export default class HomePage extends Component<{}> {
 
 constructor(props) {
     super(props) 
+}
+
+exgGroups() {
+    Actions.exggroups()
 }
 
   render() {
@@ -14,11 +19,11 @@ constructor(props) {
         <View style={styles.container}>
             <Logo3 />
             <TouchableOpacity style={styles.button}>
-                <Text style={styles.buttonText}>{this.props.typeB}</Text>
+                <Text style={styles.buttonText}>{this.props.typeA}</Text>
             </TouchableOpacity>
             <Logo3 />
-            <TouchableOpacity style={styles.button}>
-                <Text style={styles.buttonText}>{this.props.typeA}</Text>
+            <TouchableOpacity style={styles.button} onPress={this.exgGroups}>
+                <Text style={styles.buttonText}>{this.props.typeB}</Text>
             </TouchableOpacity>
             <Logo3 />
             <TouchableOpacity style={styles.button}>
@@ -46,7 +51,7 @@ const styles = StyleSheet.create({
     },
     buttonText: {
       fontSize: 20,
-      fontWeight: '300',
+      fontWeight: '500',
       color: '#000000',
       textAlign: 'center'   
     } 

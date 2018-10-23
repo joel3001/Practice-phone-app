@@ -7,18 +7,20 @@
  */
 
 import React, {Component} from 'react';
-import {StyleSheet, View, Text, StatusBar} from 'react-native';
+import {StyleSheet, View, Text, StatusBar, Button} from 'react-native';
 // import { createStackNavigator } from 'react-navigation';
 import LoginScreen from './src/screens/loginScreen';
 import SignUpScreen from './src/screens/signUpScreen';
 import HomeScreen from './src/screens/homeScreen';
+import GroupsScreen from './src/screens/groupsScreen';
 import Routes from './src/components/routes';
+
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <Routes/>
+      <Routes />
     );
   }
 }

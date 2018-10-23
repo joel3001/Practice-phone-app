@@ -1,10 +1,15 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, Image, TextInput, TouchableOpacity} from 'react-native';
+import { Actions } from 'react-native-router-flux';
 
 export default class Form2 extends Component<{}> {
 
 constructor(props) {
     super(props) 
+}
+
+goToLogin() {
+    Actions.login()
 }
 
   render() {
@@ -40,7 +45,7 @@ constructor(props) {
                 placeholderTextColor="#000000"/>
             
             <TouchableOpacity style={styles.button}>
-                <Text style={styles.buttonText}>{this.props.type}</Text>
+                <Text style={styles.buttonText} onPress={this.goToLogin}>{this.props.type}</Text>
             </TouchableOpacity>
         </View>
     );

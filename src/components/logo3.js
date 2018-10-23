@@ -6,7 +6,7 @@ export default class Logo3 extends Component<{}> {
     return (
         <View style={styles.container}>
           <Image 
-          style={{width: 100, height: 100}}
+          style={{width: 75, height: 75}}
           source={require('../images/beer4.png')}
           />
         </View>
@@ -17,7 +17,7 @@ export default class Logo3 extends Component<{}> {
 const styles = StyleSheet.create({
   container: {
       flexGrow: 1,
-      justifyContent: 'flex-start',
+      justifyContent: 'center',
       alignItems: 'center',
     },
     logoText: {

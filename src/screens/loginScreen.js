@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, StatusBar, TouchableOpacity, ImageBackground} from 'react-native';
+import { StyleSheet, Text, View, StatusBar, TouchableOpacity, ImageBackground } from 'react-native';
 import Logo from '../components/logo';
 import Form from '../components/form';
 import { Actions } from 'react-native-router-flux';
